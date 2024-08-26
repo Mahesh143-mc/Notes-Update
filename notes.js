@@ -31,12 +31,12 @@ notesContainer.addEventListener("click",function(e){
 })
 
 function updateStorage(){
-    localStorage.setItem("notes",  notesContainer.innerHTML);
+    localStorage.setItem("note",  notesContainer.innerHTML);
     
 }
 
 function showNotes(){
-    notesContainer.innerHTML=localStorage.getItem("notes");
+    notesContainer.innerHTML=localStorage.getItem("note");
 }
 
 showNotes();
